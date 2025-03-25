@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;800&display=swap');
+
+body {
+  background-color: #e4c7b0;
+  font-family: 'Karla', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fefae0;
+  width: 500px;
+  padding: 50px; 
+  text-align: center;
+}
+
+header {
+  text-align: left;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #606c38;
+}
+
+.name {
+  color: #283618;
+  font-weight: 300;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #283618;
+}
+
+.intro,
+.footer {
+  background: #606c38;
+  color: #ddd;
+  padding: 40px;
+  font-size: 20px;
+  margin: 25px 0;
+  border-radius: 20px;
+}
+
+.projects {
+  background: #374725;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.project {
+  background: #374725;
+  color: #ddd;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 20px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fefae0;
+}
+
+.desc {
+  font-size: 20px;
+}
+
+.cirle-left {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  gap: 20px; 
+}
+
+.circle-left a:hover {
+  cursor: pointer;
+}
+.circle,
+circle-image {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin: 0 auto; 
+  width: 150px;
+  height: 150px;
+}
+
+.circle a:hover {
+  cursor: pointer;
+}
+
+.left {
+  order: 1; 
+}
+
+.right {
+  order: 2; 
+}
+
+.circle-image {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 0 auto; 
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out; 
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 20px; 
+}
+
+.icons a {
+  margin: 5px; 
+}
+
+.icons img {
+  width: 20px; 
+  height: 20px; 
+}
+
+.cv-btn {
+  background: #888;
+  border: none;
+  padding: 15px 35px;
+  color: white;
+  font-size: 20px;
+  margin-top: 25px;
+  border-radius: 20px;
+}
+.container {
+  position: relative; 
+  background-color: #fefae0;
+  width: 500px;
+  padding: 50px;
+  text-align: center;
+  z-index: 1;
+}
+
+.container::before,
+.container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 20px; 
+  background: #fefae0; 
+  z-index: -1; 
+}
+
+.container::before {
+  left: -25px; 
+}
+
+
+.container::after {
+  right: -25px; 
+}
+
+.circlebottom {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin: 0 auto; 
+  width: 150px; 
+  height: 150px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out; 
+}
